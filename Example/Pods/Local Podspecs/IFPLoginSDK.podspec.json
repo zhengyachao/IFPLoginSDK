@@ -1,0 +1,49 @@
+{
+  "name": "IFPLoginSDK",
+  "version": "0.1.0",
+  "summary": "A short description of IFPLoginSDK.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/zhengyachao/IFPLoginSDK",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "zhengyachao": "15038253754@163.com"
+  },
+  "source": {
+    "git": "https://github.com/zhengyachao/IFPLoginSDK.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "IFPLoginSDK/**/*",
+  "public_header_files": "IFPLoginSDK/**/YKSDKManager.h",
+  "vendored_libraries": "IFPLoginSDK/libWeChatSDK.a",
+  "libraries": [
+    "c++",
+    "sqlite3",
+    "z"
+  ],
+  "frameworks": [
+    "UIKit",
+    "Foundation",
+    "CoreTelephony",
+    "SystemConfiguration",
+    "Security",
+    "CoreTelephony",
+    "CFNetwork"
+  ],
+  "dependencies": {
+    "FBSDKCoreKit": [
+
+    ],
+    "FBSDKLoginKit": [
+
+    ],
+    "FBSDKShareKit": [
+
+    ]
+  }
+}

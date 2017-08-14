@@ -1,0 +1,6 @@
+framework module IFPLoginSDK {
+  umbrella header "IFPLoginSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}
