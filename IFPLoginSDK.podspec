@@ -11,7 +11,7 @@ TODO: Add long description of the pod here.
   s.homepage         = 'https://github.com/zhengyachao/IFPLoginSDK'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'zhengyachao' => '15038253754@163.com' }
-  s.source           = { :git => 'https://github.com/zhengyachao/IFPLoginSDK.git', :tag => 0.1.0 }
+  s.source           = { :git => 'https://github.com/zhengyachao/IFPLoginSDK.git', :tag => '0.1.0' }
 
   s.ios.deployment_target = '8.0'
 
