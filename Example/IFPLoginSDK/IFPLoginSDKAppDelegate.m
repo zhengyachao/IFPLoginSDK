@@ -7,12 +7,17 @@
 //
 
 #import "IFPLoginSDKAppDelegate.h"
+#import <IFPLoginSDK/YKSDKManager.h>
 
 @implementation IFPLoginSDKAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    [[YKSDKManager shareManager] initFaceBookSDKForApplication:application didFinishLaunchingWithOptions:launchOptions];
+    
+    [[YKSDKManager shareManager] registerAppForWechat:@"wx0bceb2176071ae4b"];
+    
     return YES;
 }
 
@@ -38,9 +43,38 @@
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
 }
 
+
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (BOOL)application:(UIApplication *)application
+            openURL:(NSURL *)url
+  sourceApplication:(NSString *)sourceApplication
+         annotation:(id)annotation
+{
+    BOOL result = [[YKSDKManager shareManager] application:application
+                                                   openURL:url
+                                         sourceApplication:sourceApplication
+                                                annotation:annotation];
+    if (!result) {
+        // 其他SDK的回调
+        [[YKSDKManager shareManager] handleOpenURLForWechat:url];
+    }
+    return result;
+}
+    
+- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary *)options
+{
+    
+    return [[YKSDKManager shareManager] handleOpenURLForWechat:url];
+    
+}
+    
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url
+{
+    return [[YKSDKManager shareManager] handleOpenURLForWechat:url];
 }
 
 @end

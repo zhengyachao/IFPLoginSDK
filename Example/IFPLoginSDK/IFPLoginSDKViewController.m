@@ -7,6 +7,7 @@
 //
 
 #import "IFPLoginSDKViewController.h"
+#import <IFPLoginSDK/YKSDKManager.h>
 
 @interface IFPLoginSDKViewController ()
 
@@ -24,6 +25,13 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)facebookLoginButton:(id)sender {
+    [[YKSDKManager shareManager] logInWithReadPermissions:@[@"public_profile"] fromViewController:self];
+}
+    
+- (IBAction)wechatLoginButton:(id)sender {
+    [[YKSDKManager shareManager] loginWechatAPP:self];
 }
 
 @end

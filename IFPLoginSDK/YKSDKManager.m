@@ -53,7 +53,7 @@
               fromViewController:(UIViewController *)fromViewController
 {
     FBSDKLoginManager *login = [[FBSDKLoginManager alloc] init];
-    [login logInWithReadPermissions: @[@"public_profile"]
+    [login logInWithReadPermissions:permissions
                  fromViewController:fromViewController
                             handler:^(FBSDKLoginManagerLoginResult *result, NSError *error)
      {
