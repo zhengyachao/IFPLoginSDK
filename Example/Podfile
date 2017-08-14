@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'IFPLoginSDK_Example' do
+  pod 'IFPLoginSDK', :path => '../'
+
+  target 'IFPLoginSDK_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
