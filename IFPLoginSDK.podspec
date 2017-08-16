@@ -3,7 +3,7 @@
 Pod::Spec.new do |s|
   s.name             = 'IFPLoginSDK'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of IFPLoginSDK.'
+  s.summary          = '集成facebook,微信的登录功能，可打包静态库'
   s.description      = <<-DESC
 TODO: Add long description of the pod here.
                        DESC

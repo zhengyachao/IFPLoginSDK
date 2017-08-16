@@ -551,6 +551,7 @@
 				GCC_PREFIX_HEADER = "IFPLoginSDK/IFPLoginSDK-Prefix.pch";
 				INFOPLIST_FILE = "IFPLoginSDK/IFPLoginSDK-Info.plist";
 				MODULE_NAME = ExampleApp;
+				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_BUNDLE_IDENTIFIER = ifreeplay.com.ZYCTestDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -567,6 +568,7 @@
 				GCC_PREFIX_HEADER = "IFPLoginSDK/IFPLoginSDK-Prefix.pch";
 				INFOPLIST_FILE = "IFPLoginSDK/IFPLoginSDK-Info.plist";
 				MODULE_NAME = ExampleApp;
+				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_BUNDLE_IDENTIFIER = ifreeplay.com.ZYCTestDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;

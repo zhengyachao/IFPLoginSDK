@@ -10,6 +10,8 @@
 #import <IFPLoginSDK/YKSDKManager.h>
 
 @interface IFPLoginSDKViewController ()
+    @property (weak, nonatomic) IBOutlet UIButton *facebook;
+
 
 @end
 
@@ -30,8 +32,6 @@
     [[YKSDKManager shareManager] logInWithReadPermissions:@[@"public_profile"] fromViewController:self];
 }
     
-- (IBAction)wechatLoginButton:(id)sender {
-    [[YKSDKManager shareManager] loginWechatAPP:self];
-}
+
 
 @end
