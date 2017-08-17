@@ -11,7 +11,7 @@ PODS:
     - FBSDKCoreKit
   - FBSDKShareKit (4.25.0):
     - FBSDKCoreKit
-  - IFPLoginSDK (0.1.0):
+  - IFPLoginSDK (0.1.1):
     - FBSDKCoreKit
     - FBSDKLoginKit
     - FBSDKShareKit
@@ -28,7 +28,7 @@ SPEC CHECKSUMS:
   FBSDKCoreKit: 53e3f4bfb64e80c5f229dd30ae33ff57fbbbd2d1
   FBSDKLoginKit: f628c09684dae9c17f071cf90b014e886f5093ea
   FBSDKShareKit: aea699d3cac749af08e360f4e949b82ffa8813f5
-  IFPLoginSDK: d208febd97293172357aa3ceb8387f7aa0b0102a
+  IFPLoginSDK: 5f446cbb894f26cdd48ac4ace016d843c091acc8
 
 PODFILE CHECKSUM: 7673b2c99f54f331fd016443c81250eaa88c08bd
 

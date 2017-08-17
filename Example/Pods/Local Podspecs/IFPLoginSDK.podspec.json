@@ -1,19 +1,16 @@
 {
   "name": "IFPLoginSDK",
-  "version": "0.1.0",
-  "summary": "A short description of IFPLoginSDK.",
+  "version": "0.1.1",
+  "summary": "集成facebook,微信的登录功能，可打包静态库",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/zhengyachao/IFPLoginSDK",
-  "license": {
-    "type": "MIT",
-    "file": "LICENSE"
-  },
+  "license": "MIT",
   "authors": {
     "zhengyachao": "15038253754@163.com"
   },
   "source": {
     "git": "https://github.com/zhengyachao/IFPLoginSDK.git",
-    "tag": "0.1.0"
+    "tag": "0.1.1"
   },
   "platforms": {
     "ios": "8.0"
@@ -21,6 +18,7 @@
   "source_files": "IFPLoginSDK/**/*",
   "public_header_files": "IFPLoginSDK/**/YKSDKManager.h",
   "vendored_libraries": "IFPLoginSDK/libWeChatSDK.a",
+  "vendored_frameworks": "IFPLoginSDK/LineSDK.framework",
   "libraries": [
     "c++",
     "sqlite3",
@@ -45,5 +43,8 @@
     "FBSDKShareKit": [
 
     ]
+  },
+  "pod_target_xcconfig": {
+    "OTHER_LDFLAGS": "-all_load"
   }
 }
